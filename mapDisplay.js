@@ -1,5 +1,5 @@
 var map;
-var infowindow = new google.maps.InfoWindow();
+var infowindow = new google.maps.InfoWindow({maxWidth: 350});
 
 function initializeMap() {
     var mapOptions = {
@@ -51,14 +51,22 @@ function drawEvents(filePath) {
 function addMarker(event) {
     /* TODO: add more event fields to description */
     var contentString = '<div id="content">' +
-        '<h1>' + event.name + '</h1>' +
-        '<h2>' + event.district + '</h2>' +
-        '<p>' + event.description + '</p></div>';
+            '<h1>' + event.name + '</h1>' +
+            '<h2>' + event.district + '</h2>' +
+            '<p>' + event.description + '</p></div>';
+    var pinIcon = new google.maps.MarkerImage(
+            "img/pinicons/" + event.type + ".png",
+            null, /* size is determined at runtime */
+            null, /* origin is 0,0 */
+            null, /* anchor is bottom center of the scaled image */
+            new google.maps.Size(22, 29)
+        );
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(event.lat, event.lng),
         map: map,
         title: event.name,
-        draggable: false
+        draggable: false,
+        icon: pinIcon
     });
     google.maps.event.addListener(marker, 'click', function() {
         infowindow.setContent(contentString);

@@ -102,7 +102,7 @@
       "link":"http://diddyriese.com/",
       "lat":"34.06298",
       "route1":"N/A",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.44688",
       "description":"Classic and cheap. Long lines on weekend nights"
    },
@@ -114,7 +114,7 @@
       "link":"http://www.yelp.com/search?find_desc=Best+Restaurants+In+Westwood&amp;find_loc=Los+Angeles%2C+CA",
       "lat":"34.06076",
       "route1":"N/A",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.445398",
       "description":"Restaurants such as Bella Pita (falafels), Yamadaya (ramen), 800 degrees (pizza), Fat Sal's (sandwiches), TLT (tacos) and more"
    },
@@ -126,7 +126,7 @@
       "link":"http://www.discoverlosangeles.com/blog/definitive-guide-persian-square",
       "lat":"34.056154",
       "route1":"N/A",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.442278",
       "description":"Persian restaurants and stores- try Saffron and Rose for Persian ice cream, Attari for tounge/brain sandwiches, or Shamshiri for Persian food to name a few"
    },
@@ -138,7 +138,7 @@
       "link":"http://www.sweetrosecreamery.com/",
       "lat":"34.055474",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.442056",
       "description":"Unique and rich flavors, close drive to campus- also one in Santa Monica off the 2 or 3"
    },
@@ -179,7 +179,7 @@
       "route3":"Big Blue Bus 3",
       "route2":"Big Blue Bus 2",
       "route1":"Big Blue Bus 1",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.49035",
       "route4":"Metro 720"
    },
@@ -193,7 +193,7 @@
       "route3":"Big Blue Bus 3",
       "route2":"Big Blue Bus 2",
       "route1":"Big Blue Bus 1",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.494985",
       "route4":"Metro 720"
    },
@@ -220,7 +220,7 @@
       "lat":"34.025785",
       "route2":"Big Blue Bus 2",
       "route1":"Big Blue Bus 1",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.483382",
       "description":"Wownuts/Conuts (waffle/croissant &amp; donuts), Ube donuts, and more"
    },
@@ -234,7 +234,7 @@
       "route3":"Big Blue Bus 3",
       "route2":"Big Blue Bus 2",
       "route1":"Big Blue Bus 1",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.489292",
       "description":"Bomb sandwiches- the godmother is classic"
    },
@@ -248,7 +248,7 @@
       "route3":"Big Blue Bus 3",
       "route2":"Big Blue Bus 2",
       "route1":"Big Blue Bus 1",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.488668",
       "description":"Closest place to campus to bowl. Wait for Groupons to get a deal"
    },
@@ -277,7 +277,7 @@
       "route3":"Big Blue Bus 3",
       "route2":"Big Blue Bus 2",
       "route1":"Big Blue Bus 1",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.496047",
       "route4":"Metro 720"
    },
@@ -344,7 +344,7 @@
       "link":"http://veniceskatepark.com/",
       "lat":"33.987037",
       "route1":"Big Blue Bus 1",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.475396",
       "description":"Always full of skaters doing crazy tricks in the bowls and ramps and such"
    },
@@ -368,7 +368,7 @@
       "lat":"33.999746",
       "route2":"Big Blue Bus 3",
       "route1":"Big Blue Bus 1",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.46496",
       "description":"Known for their unique sausages with rabbit/rattlesnake/alligator and other meats. Huge variety of German/Belgian beers as well."
    },
@@ -447,7 +447,7 @@
       "link":"http://en.wikipedia.org/wiki/Mulholland_Drive",
       "lat":"34.131093",
       "route1":"Drive",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.49047",
       "description":"Drive through twists and curves on this scenic route in the mountains"
    },
@@ -471,7 +471,7 @@
       "lat":"34.038944",
       "route2":"Culver City 6",
       "route1":"Big Blue Bus 1",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.442526",
       "description":"Food everywhere- Ramen- Shinengumi (customizable ramen with different noodle textures and $0.97  noodle refills), Daikokuya (famous for being good), Tonkotsu (Tsukemen ramen, two stores with different broths), Tsujita (order ramen off the iPads) ; Boba/Sweet- Coco's, Volcano Milk Tea, Blockheads (fine shaved ice), Brian's Shaved Ice (Hawaiian shaved ice) ; Curry- Curry house, Hurry Curry ; Sushi Stop- Budget, decent sushi"
    },
@@ -483,7 +483,7 @@
       "link":"http://plancheck.com/",
       "lat":"34.043887",
       "route1":"Big Blue Bus 1",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.446092",
       "description":"Possibly the best burgers in the LA area"
    },
@@ -495,7 +495,7 @@
       "link":"http://www.churroscalientes.com/",
       "lat":"34.045405",
       "route1":"Big Blue Bus 1",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.452672",
       "description":"Curros cravings"
    },
@@ -507,7 +507,7 @@
       "link":"http://www.rockyhorror.com/",
       "lat":"34.046279",
       "route1":"Drive",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.448079",
       "description":"Interesting subculture- audience participation, lots of vularity, and live acting along with the movie. Every Saturday night at midnight at Nuart Theater"
    },
@@ -518,7 +518,7 @@
       "link":"http://www.yelp.com/biz/dockweiler-beach-playa-del-rey",
       "lat":"33.942135",
       "route1":"Drive",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.442614",
       "description":"Closest legal place to host bonfires. Heads up your feet will be black after walking in the sand as it's right by LAX"
    },
@@ -633,7 +633,7 @@
       "link":"http://www.marinadelreyparasailing.com/",
       "lat":"33.973066",
       "route1":"Big Blue Bus 3",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.446424",
       "description":"Get it with a groupon"
    },
@@ -644,7 +644,7 @@
       "link":"http://marinaaquaticcenter.org/",
       "lat":"33.981872",
       "route1":"Big Blue Bus 3",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.441249",
       "description":"Single or tandem kayaking in the Marina. Free if you call in and RSVP as UCLA students"
    },
@@ -657,7 +657,7 @@
       "lat":"34.071505",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.067604",
       "description":"Boba and hookah. That is all."
    },
@@ -670,7 +670,7 @@
       "lat":"34.052306",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.308742",
       "description":"Multiple throughout Ktown- kpop stores and markets with pear juice, redbean/icecream fish desserts, kimichi, etc. Location is Galleria, others include Zion and Ktown Plaza"
    },
@@ -683,7 +683,7 @@
       "lat":"34.063589",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.300566",
       "description":"Singing and drinks; Multiple throughout Ktown- location is Young Dong Nohrenbang"
    },
@@ -696,7 +696,7 @@
       "lat":"34.063799",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.306449",
       "description":"Korean fried chicken "
    },
@@ -709,7 +709,7 @@
       "lat":"34.062555",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.309876",
       "description":"The Korean Starbucks"
    },
@@ -722,7 +722,7 @@
       "lat":"34.057618",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.306015",
       "description":"Tea house- hip atmosphere with Miyazaki music, cutesy waitresses, and unique tea dispensers"
    },
@@ -735,7 +735,7 @@
       "lat":"34.06127",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.313266",
       "description":"Tea house- traditional vibe"
    },
@@ -748,7 +748,7 @@
       "lat":"34.077873",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.309344",
       "description":"Drinks and arcade games go hand in hand"
    },
@@ -760,7 +760,7 @@
       "lat":"34.057337",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.302217",
       "description":"Must for UCLA students. All you can eat ranging from $10 to $20+; favorite low price: Castle II, Bud Namu; and high price: Hae Jang Chon, Road to Seoul (location is budnamu)"
    },
@@ -774,7 +774,7 @@
       "lat":"34.04996",
       "route2":"Metro 2/302",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.240032",
       "description":"Daikokiya (hour long waits are the norm), ShinSenGumi (customizable with $0.97 noodle refills), MenOh (classic ramen). Location is Daikokiya"
    },
@@ -788,7 +788,7 @@
       "lat":"34.048556",
       "route2":"Metro 2/302",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.240413",
       "description":"Traditional sushi, one of the best in LA. You get what you pay for, with with an average order of sashimi or sushi costing $5-7"
    },
@@ -814,7 +814,7 @@
       "lat":"34.04832",
       "route2":"Metro 2/302",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.239505",
       "description":"Milk tea * 720 towards Commerce Center"
    },
@@ -881,7 +881,7 @@
       "lat":"34.071754",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.40267",
       "description":"For those crepe cravings"
    },
@@ -894,7 +894,7 @@
       "lat":"34.071186",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.403684",
       "description":"Liquid nitrogen icecream- worth a visit to see it made, as it's a bit on the pricey side"
    },
@@ -920,7 +920,7 @@
       "link":"http://www.yelp.com/search?find_desc=Chinatown+Dim+Sum&amp;find_loc=Los+Angeles%2C+CA",
       "lat":"34.075841",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.369893",
       "description":"Carts rolled around carrying different dim sum dishes- Bao Dim Sum as location."
    },
@@ -933,7 +933,7 @@
       "lat":"34.046818",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.256337",
       "description":"Alcoholic boba drinks. Hidden in the back of a thai restaurant"
    },
@@ -948,7 +948,7 @@
       "route3":"Metro 2/302",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.255689",
       "description":"Streets are filled with cheap knock-offs, smoking goods, knives, and Mexican street food. The papaya juice at the end of the alley is definitely worth a try"
    },
@@ -971,7 +971,7 @@
       "link":"http://www.thelosangelesgunclub.com/",
       "lat":"34.038705",
       "route1":"Metro 720",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.234334",
       "description":"Here's your chance to use firearms- they have a large selection of guns and targets"
    },
@@ -1095,7 +1095,7 @@
       "route3":"Metro 2/302",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.249133",
       "description":"Tons of ethnic restaurants and markets from Mexican to Thai to German"
    },
@@ -1172,7 +1172,7 @@
       "link":"http://www.thegriddlecafe.com/",
       "lat":"34.097784",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.362258",
       "description":"Breakfast food served in huge portions. Like HUGE. Long lines weekend mornings."
    },
@@ -1184,7 +1184,7 @@
       "link":"http://www.laughfactory.com/clubs/hollywood",
       "lat":"34.098192",
       "route1":"Metro 2/302",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.364494",
       "description":"Weekly comedy acts, 2 drink minimum- really good first date spot"
    },
@@ -1195,7 +1195,7 @@
       "link":"http://www.thesaddleranch.com/",
       "lat":"34.095584",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.372066",
       "description":"Restaurant with a mechanical bull"
    },
@@ -1207,7 +1207,7 @@
       "link":"http://www.cabocantina.com/",
       "lat":"34.10181673",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.3356",
       "description":"Taco Tuesdays- $5 for all you can eat tacos, BOGO beers. Sundays- bottomless mamosas"
    },
@@ -1219,7 +1219,7 @@
       "link":"http://www.whippedla.com/",
       "lat":"34.091094",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.362069",
       "description":"Dole Pinapple ice cream is all you need to know"
    },
@@ -1231,7 +1231,7 @@
       "link":"http://www.melroseavenue-shop.com/",
       "lat":"33.861965",
       "route1":"Metro 2/302",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.003127",
       "description":"Range of odd and end shops, thrift stores- flea markets every Sunday selling random stuff such as polaroid cameras and jewelry "
    },
@@ -1243,7 +1243,7 @@
       "link":"http://www.groundlings.com/",
       "lat":"34.083668",
       "route1":"Metro 2/302",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.349041",
       "description":"Improv comedy"
    },
@@ -1255,7 +1255,7 @@
       "link":"http://www.pinkshollywood.com/",
       "lat":"34.083701",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.344249",
       "description":"The original Pink's, hella different types "
    },
@@ -1266,7 +1266,7 @@
       "link":"sonos-studio.com",
       "lat":"34.075129",
       "route1":"Metro 720",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.344362",
       "description":"Free shows, listening parties, and interview sessions- oh, and free booze. Expect lines"
    },
@@ -1278,7 +1278,7 @@
       "link":"http://www.themilkshop.com/",
       "lat":"34.07597",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.34851",
       "description":"Dessert and macaroons"
    },
@@ -1293,7 +1293,7 @@
       "route3":"Metro 2/302",
       "route2":"Metro 720",
       "route1":"Big Blue Bus 1",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.319152",
       "description":"Studio tours"
    },
@@ -1305,7 +1305,7 @@
       "link":"http://cinespia.org/",
       "lat":"34.090319",
       "route1":"Metro 2/302",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.319931",
       "description":"Host outdoor movie screenings every week"
    },
@@ -1328,7 +1328,7 @@
       "link":"http://www.cantersdeli.com/",
       "lat":"34.078897",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.361751",
       "description":"Old school food- favorite among many in LA"
    },
@@ -1340,7 +1340,7 @@
       "link":"http://chibiscus.com/",
       "lat":"34.098194",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.350457",
       "description":"Best brick toast outside the 626"
    },
@@ -1416,7 +1416,7 @@
       "lat":"34.056748",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.364332",
       "description":"Have you tried Ethiopian food? Now you can say 'yes'"
    },
@@ -1453,7 +1453,7 @@
       "link":"http://www.yelp.com/biz/el-chato-taco-truck-los-angeles-2",
       "lat":"34.057099",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.346186",
       "description":"Good, cheap Mexican food truck- located at 5300 W Olympic Blvd"
    },
@@ -1466,7 +1466,7 @@
       "lat":"34.0659",
       "route2":"Metro 20",
       "route1":"Metro 720",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.376352",
       "description":"Fogo de Chao (Brazillian BBQ), Lawry's, Stinking Rose, etc. Go during Dine LA"
    },
@@ -1478,7 +1478,7 @@
       "link":"http://www.yelp.com/biz/kenneth-hahn-state-recreation-area-los-angeles",
       "lat":"34.00824",
       "route1":"Drive",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.364737",
       "description":"Chill park to relax in with a view"
    },
@@ -1502,7 +1502,7 @@
       "link":"http://www.yelp.com/c/culver-city-ca-us/food",
       "lat":"34.023125",
       "route1":"Big Blue Bus 12",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.395382",
       "description":"Bomb fried chicken and biscuits- best eaten with their honey"
    },
@@ -1514,7 +1514,7 @@
       "link":"http://fathersoffice.com/",
       "lat":"34.030358",
       "route1":"Big Blue Bus 12",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.384786",
       "description":"Amazing burgers and beers; 21+"
    },
@@ -1537,7 +1537,7 @@
       "link":"http://sonypicturesstudios.com/",
       "lat":"34.017289",
       "route1":"Big Blue Bus 12",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.401951",
       "description":"TV tapings here. Register early, interesting crowd of people"
    },
@@ -1549,7 +1549,7 @@
       "link":"http://losangeles.ucbtheatre.com/",
       "lat":"34.1054",
       "route1":"Metro 2/302",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.318807",
       "description":"Comedy shows- improv, sketch, and standup"
    },
@@ -1561,7 +1561,7 @@
       "link":"http://www.hollywoodbowl.com/",
       "lat":"34.111864",
       "route1":"Metro 2/302",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.339187",
       "description":"Catch a concert here at this amphitheater "
    },
@@ -1572,7 +1572,7 @@
       "link":"http://www.walkoffame.com/",
       "lat":"34.101428",
       "route1":"Metro 2/302",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.342259",
       "description":"It's Hollywood"
    },
@@ -1609,7 +1609,7 @@
       "link":"http://www.citywalkhollywood.com/",
       "lat":"34.137085",
       "route1":"Metro 720",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.353303",
       "description":"Shops and restaurants "
    },
@@ -1622,7 +1622,7 @@
       "link":"http://www.universalstudioshollywood.com/",
       "lat":"34.137997",
       "route1":"Metro 720",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.353576",
       "description":"Amusement park rides, Horror Nights - discount tickets at CTO"
    },
@@ -1634,7 +1634,7 @@
       "link":"http://www.littlearmenia.com/spotlight/restaurants/",
       "lat":"34.101365",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.301372",
       "description":"Armenian food"
    },
@@ -1657,7 +1657,7 @@
       "link":"http://www.yelp.com/biz/the-old-zoo-los-angeles-2",
       "lat":"34.133862",
       "route1":"Metro 20",
-      "type":"Do Something",
+      "type":"DoSomething",
       "lng":"-118.288513",
       "description":"Old LA zoo- can sneak past the fences and walk around the cages "
    },
@@ -1715,7 +1715,7 @@
       "link":"http://www.discoverlosangeles.com/blog/definitive-guide-thai-town",
       "lat":"34.098459",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.306156",
       "description":"Pa Ord (bomb noodles/thai tea), "
    },
@@ -1728,7 +1728,7 @@
       "link":"http://www.yamashirorestaurant.com/tag/yamashiro-farmers-market/",
       "lat":"34.105467",
       "route1":"Metro 2/302",
-      "type":"Food/Drink",
+      "type":"FoodDrink",
       "lng":"-118.342218",
       "description":"Great view of LA while buying local produce and foods- tacos are a favorite here. Every Thursday in the summer"
    },
