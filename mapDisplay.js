@@ -3,7 +3,7 @@
  */
 var map;
 var infowindow = new google.maps.InfoWindow({maxWidth: 350});
-var businfo = new google.maps.InfoWindow({maxWidth: 100});
+var businfo = new google.maps.InfoWindow({maxWidth: 100, pixelOffset: new google.maps.Size(0, -5)});
 var routePaths = [];
 const NUM_ROUTES = 11;
 
