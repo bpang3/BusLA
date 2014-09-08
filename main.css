@@ -9,3 +9,8 @@ body {
 #map-canvas {
     height: 100%
 }
+
+h1 {
+    font-size: 22pt;
+    margin: 4px;
+}
