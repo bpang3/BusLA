@@ -19,15 +19,15 @@ function initializeMap() {
     map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
     routePaths[0] = drawRoute("data/maproutes/big_blue_bus_1.json", "#186BCB");
-    routePaths[1] = drawRoute("data/maproutes/big_blue_bus_12.json", "#FFA617");
+    routePaths[1] = drawRoute("data/maproutes/big_blue_bus_12.json", "#26FF00");
     routePaths[2] = drawRoute("data/maproutes/big_blue_bus_2.json", "#FFF824");
     routePaths[3] = drawRoute("data/maproutes/big_blue_bus_3.json", "#E53515");
     routePaths[4] = drawRoute("data/maproutes/culver_city_6.json", "#E32B7D");
     routePaths[5] = drawRoute("data/maproutes/metro_20.json", "#12BEFF");
     routePaths[6] = drawRoute("data/maproutes/metro_2_302.json", "#8143F7");
-    routePaths[7] = drawRoute("data/maproutes/metro_534.json", "#3E1CFF");
+    routePaths[7] = drawRoute("data/maproutes/metro_534.json", "#3DE2FF");
     routePaths[8] = drawRoute("data/maproutes/metro_720.json", "#06C472");
-    routePaths[9] = drawRoute("data/maproutes/metro_761.json", "#A9F22C");
+    routePaths[9] = drawRoute("data/maproutes/metro_761.json", "#FFA617");
     routePaths[10] = drawRoute("data/maproutes/metro_expo_806.json", "#FA5204");
     drawEvents("data/events.json");
 }
