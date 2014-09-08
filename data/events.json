@@ -654,11 +654,11 @@
       "picture_path":"bb.jpg",
       "cost":1,
       "link":"http://www.bobabear.com/",
-      "lat":"34.071505",
+      "lat":"34.070908",
       "route2":"Metro 20",
       "route1":"Metro 720",
       "type":"FoodDrink",
-      "lng":"-118.067604",
+      "lng":"-118.309146",
       "description":"Boba and hookah. That is all."
    },
    {
@@ -1224,15 +1224,15 @@
       "description":"Dole Pinapple ice cream is all you need to know"
    },
    {
-      "name":"Melrose Street",
+      "name":"Melrose Avenue",
       "district":"West Hollywood",
       "picture_path":"melrose.jpg",
       "cost":1,
       "link":"http://www.melroseavenue-shop.com/",
-      "lat":"33.861965",
+      "lat":"34.108925",
       "route1":"Metro 2/302",
       "type":"DoSomething",
-      "lng":"-118.003127",
+      "lng":"-118.333717",
       "description":"Range of odd and end shops, thrift stores- flea markets every Sunday selling random stuff such as polaroid cameras and jewelry "
    },
    {
