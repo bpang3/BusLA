@@ -3,8 +3,9 @@
  */
 var map;
 var infowindow = new google.maps.InfoWindow({maxWidth: 350});
-var businfo = new google.maps.InfoWindow({maxWidth: 100, pixelOffset: new google.maps.Size(0, -5)});
+var businfo = new google.maps.InfoWindow({pixelOffset: new google.maps.Size(0, -5)});
 var routePaths = [];
+var places = [];
 const NUM_ROUTES = 11;
 
 
@@ -14,7 +15,9 @@ const NUM_ROUTES = 11;
 function initializeMap() {
     var mapOptions = {
         center: new google.maps.LatLng(34.0722, -118.4441), // map centered at UCLA, go Bruins!
-        zoom: 12
+        zoom: 12,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: maptheme
     };
     map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
@@ -25,11 +28,11 @@ function initializeMap() {
     routePaths[4] = drawRoute("data/maproutes/culver_city_6.json", "#E32B7E");
     routePaths[5] = drawRoute("data/maproutes/metro_20.json", "#12BEFF");
     routePaths[6] = drawRoute("data/maproutes/metro_2_302.json", "#8143F7");
-    routePaths[7] = drawRoute("data/maproutes/metro_534.json", "#3DE2FF");
+    routePaths[7] = drawRoute("data/maproutes/metro_534.json", "#00C8EB");
     routePaths[8] = drawRoute("data/maproutes/metro_720.json", "#06C472");
     routePaths[9] = drawRoute("data/maproutes/metro_761.json", "#FA5204");
     routePaths[10] = drawRoute("data/maproutes/metro_expo_806.json", "#F514F5");
-    drawEvents("data/events.json");
+    drawEvents("data/places.json");
 }
 
 /*
@@ -37,45 +40,52 @@ function initializeMap() {
  * and stores a route object as a global variable
  * @param string filePath: path to JSON bus route
  * @param string color: hex color of the path
- * @returns routeObject
+ * @returns routeObj
  */
 function drawRoute(filePath, color) {
-    var routeObject = {};
+    var routeObj = {};
     $.getJSON(filePath, function(routeJSON) {
         var routeCoordinates = [];
         for (i in routeJSON.bus_stops) {
             routeCoordinates[i] = new google.maps.LatLng(
                     routeJSON.bus_stops[i].lat, routeJSON.bus_stops[i].lon);
         }
-        routeObject.polyline = new google.maps.Polyline({
+        routeObj.polyline = new google.maps.Polyline({
             path: routeCoordinates,
             geodesic: true,
             strokeColor: color,
-            strokeOpacity: 0.9,
+            strokeOpacity: 0.85,
             strokeWeight: 10
         });
-        routeObject.polyline.setMap(map);
-        routeObject.name = routeJSON.route_name;
+        routeObj.polyline.setMap(map);
+        routeObj.name = routeJSON.route_name;
         // event listener to hide all other routes on click
-        google.maps.event.addListener(routeObject.polyline, 'click', function() {
+        google.maps.event.addListener(routeObj.polyline, 'click', function() {
             for(var i = 0; i < NUM_ROUTES; i++)
-                routePaths[i].polyline.setOptions({strokeOpacity: 0.35});
-            routeObject.polyline.setOptions({strokeOpacity: 0.9});
+                routePaths[i].polyline.setOptions({strokeOpacity: 0.25});
+            routeObj.polyline.setOptions({strokeOpacity: 0.85});
+            for(var i = 0; i < places.length; i++){
+                if(places[i].routes.indexOf(routeObj.name) == -1){
+                    places[i].marker.setMap(null);
+                }
+                else
+                    places[i].marker.setMap(map);
+            }
         });
         // event listener to show name of route on mouseover
-        google.maps.event.addListener(routeObject.polyline, 'mouseover', function(event) {
-            businfo.setContent(routeObject.name);
+        google.maps.event.addListener(routeObj.polyline, 'mouseover', function(event) {
+            businfo.setContent(routeObj.name);
             businfo.setPosition(event.latLng);
             businfo.open(window.map);
         });
-        google.maps.event.addListener(routeObject.polyline, 'mousemove', function(event) {
+        google.maps.event.addListener(routeObj.polyline, 'mousemove', function(event) {
             businfo.setPosition(event.latLng);
         });
-        google.maps.event.addListener(routeObject.polyline, 'mouseout', function(event) {
+        google.maps.event.addListener(routeObj.polyline, 'mouseout', function(event) {
             businfo.close();
         });
     });
-    return routeObject;
+    return routeObj;
 }
 
 function drawEvents(filePath) {
@@ -110,6 +120,9 @@ function addMarker(place) {
         infowindow.setContent(contentString);
         infowindow.open(window.map, marker);
     });
+    placeObj = place;
+    placeObj.marker = marker;
+    places[places.length] = placeObj;
 }
 
 google.maps.event.addDomListener(window, 'load', initializeMap);
