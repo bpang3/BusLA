@@ -74,7 +74,7 @@ function drawRoute(filePath, color) {
         });
         // event listener to show name of route on mouseover
         google.maps.event.addListener(routeObj.polyline, 'mouseover', function(event) {
-            businfo.setContent("<span style='white-space: nowrap;'>" + routeObj.name + "</span>");
+            businfo.setContent("<div>" + routeObj.name + "</div>");
             businfo.setPosition(event.latLng);
             businfo.open(window.map);
         });
