@@ -15,9 +15,9 @@ const NUM_ROUTES = 11;
 function initializeMap() {
     var mapOptions = {
         center: new google.maps.LatLng(34.0722, -118.4441), // map centered at UCLA, go Bruins!
-        zoom: 13,
+        zoom: 12,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: maptheme,
+        styles: mapTheme,
         disableDefaultUI: true
     };
     map = new google.maps.Map(document.getElementById("map-canvas"),
@@ -93,7 +93,6 @@ function drawEvents(filePath) {
     $.getJSON(filePath, function(eventJSON) {
         for (var i = 0; i < eventJSON.length; i++) {
             function addMarker(place) {
-                /* TODO: add more place fields to description */
                 var contentString = '<div><h4>' + place.name + ' | ' 
                         + place.district;
                 if('cost' in place && place.cost != '') {
@@ -136,35 +135,5 @@ function drawEvents(filePath) {
         }
     });
 }
-
-/*
- * filterPlacesRoute filters places to show only places associated with given route
- * @param string routeName: name of route to filter based on
- */
-function filterPlacesRoute(routeName) {
-    for (var i = 0; i < places.length; i++) {
-        if (places[i].routes.indexOf(routeName) == -1) {
-            places[i].marker.setMap(null);
-        }
-        else
-            places[i].marker.setMap(map);
-    }
-}
-
-/*
- * filterPlacesType filters places to show only places associated with given type
- * @param string type: type to filter based on
- */
-function filterPlacesType(type) {
-    for (var i = 0; i < places.length; i++) {
-        if (places[i].type != type) {
-            places[i].marker.setMap(null);
-        }
-        else
-            places[i].marker.setMap(map);
-    }
-}
-
-
 
 google.maps.event.addDomListener(window, 'load', initializeMap);

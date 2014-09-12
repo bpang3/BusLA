@@ -6,6 +6,19 @@ body {
     margin: 0;
     padding: 0
 }
+
+#main {
+    height: 100%;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.dropdown-menu {
+    padding: 8px;
+}
+
 #map-canvas {
     height: 100%
 }
