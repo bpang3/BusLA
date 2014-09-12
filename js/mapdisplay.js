@@ -5,6 +5,7 @@ var map;
 var infowindow = new google.maps.InfoWindow({maxWidth: 420});
 var businfo = new google.maps.InfoWindow({pixelOffset: new google.maps.Size(0, -5)});
 var routePaths = [];
+var activeRoute = false;
 var places = [];
 const NUM_ROUTES = 11;
 
@@ -65,12 +66,13 @@ function drawRoute(filePath, color) {
             for (var i = 0; i < NUM_ROUTES; i++)
                 routePaths[i].polyline.setOptions({strokeOpacity: 0.25});
             routeObj.polyline.setOptions({strokeOpacity: 0.85});
-            filterPlacesRoute(routeObj.name);
+            filterRoutePlaces(routeObj.name);
+            activeRoute = routeObj.name;
         });
         // event listener to show name of route on mouseover
         google.maps.event.addListener(routeObj.polyline, 'mouseover', function(event) {
-            /* TODO: fix text wrapping and infowindow size (Windows Chrome) */
-            businfo.setContent("<h4 style='white-space: nowrap;'>" + routeObj.name + "</h4>");
+            businfo.setContent("<div style='line-height: 1.35;overflow: hidden;white-space: nowrap;'><h4>"
+                    + routeObj.name + "</h4></div>");
             businfo.setPosition(event.latLng);
             businfo.open(window.map);
         });
@@ -94,10 +96,7 @@ function drawEvents(filePath) {
         for (var i = 0; i < eventJSON.length; i++) {
             function addMarker(place) {
                 var contentString = '<div><h4>' + place.name + ' | ' 
-                        + place.district;
-                if('cost' in place && place.cost != '') {
-                    contentString = contentString + ' | ' + place.cost;
-                }
+                        + place.district + ' | ' + place.cost;
                 contentString = contentString + '</h4><p>'
                 if('link' in place) {
                     contentString = contentString + '<a href=\'' 

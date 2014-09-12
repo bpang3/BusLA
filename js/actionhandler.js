@@ -1,9 +1,8 @@
-
 /*
- * filterRoutes filters places to show only places associated with given route
+ * filterRoutePlaces filters places to show only places associated with given route
  * @param string routeName: name of route to filter based on
  */
-function filterRoutes(routeName) {
+function filterRoutePlaces(routeName) {
     for (var i = 0; i < places.length; i++) {
         if (places[i].routes.indexOf(routeName) == -1) {
             places[i].marker.setMap(null);
@@ -13,38 +12,50 @@ function filterRoutes(routeName) {
     }
 }
 
-function showType(type) {
+function showPlacesByType(placeType) {
     for (var i = 0; i < places.length; i++)
-        if (places[i].type == type)
+        if (places[i].type == placeType && (!activeRoute || places[i].routes.indexOf(activeRoute) != -1))
             places[i].marker.setMap(map);
 }
 
-function hideType(type) {
+function hidePlacesByType(placeType) {
     for (var i = 0; i < places.length; i++)
-        if (places[i].type == type)
+        if (places[i].type == placeType)
             places[i].marker.setMap(null);
 }
 
-function showCost(cost) {
+function showPlacesByCost(placeCost) {
     for (var i = 0; i < places.length; i++)
-        if (places[i].cost == type)
-            places[i].marker.setMap(map);
+        if (places[i].cost == placeCost && (!activeRoute || places[i].routes.indexOf(activeRoute) != -1)
+)            places[i].marker.setMap(map);
 }
 
-function hideType(cost) {
+function hidePlacesByCost(placeCost) {
     for (var i = 0; i < places.length; i++)
-        if (places[i].cost == type)
+        if (places[i].cost == placeCost)
             places[i].marker.setMap(null);
 }
-
 
 $(document).ready(function() {
     $('#typeFilter input:checkbox').change(function() {
-        if($(this).is(":checked"))
-            showType(this.value);
+        if ($(this).is(":checked")) {
+            showPlacesByType(this.value);
+            $('#costFilter input:checkbox:not(:checked)').each(function() {
+                hidePlacesByCost(this.value);
+            });
+        }
         else
-            hideType(this.value);
+            hidePlacesByType(this.value);
+    });
+    
+    $('#costFilter input:checkbox').change(function() {
+        if($(this).is(":checked")) {
+            showPlacesByCost(this.value);
+            $('#typeFilter input:checkbox:not(:checked)').each(function() {
+                hidePlacesByType(this.value);
+            });
+        }
+        else
+            hidePlacesByCost(this.value);
     });
 });
-
-//TODO: make sure everything has cost
