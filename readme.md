@@ -1,5 +1,12 @@
-BusLA by Zheng Sun & Byron Pang
+#BusLA
+http://zhengsun.github.io/BusLA/
+##Introduction
+How can someone explore Los Angeles without a car? BusLA shows places you can get to from UCLA by bus only.
 
-Map showing places that can be reached from UCLA by bus.
+[Google Maps Pin Icons](http://templatic.com/news/100-free-templatic-map-icons/)
+[Google Maps Theme "Clean Cut"](http://snazzymaps.com/style/77/clean-cut)
 
-Google Map Pin Icons from http://templatic.com/news/100-free-templatic-map-icons/
+##Credits
+Bus LA is created by
+Zheng Sun - Project Design, Development
+Byron Pang - Project Design, Data Creation
