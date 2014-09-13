@@ -27,7 +27,8 @@ function hidePlacesByType(placeType) {
 function showPlacesByCost(placeCost) {
     for (var i = 0; i < places.length; i++)
         if (places[i].cost == placeCost && (!activeRoute || places[i].routes.indexOf(activeRoute) != -1)
-)            places[i].marker.setMap(map);
+                )
+            places[i].marker.setMap(map);
 }
 
 function hidePlacesByCost(placeCost) {
@@ -47,9 +48,9 @@ $(document).ready(function() {
         else
             hidePlacesByType(this.value);
     });
-    
+
     $('#costFilter input:checkbox').change(function() {
-        if($(this).is(":checked")) {
+        if ($(this).is(":checked")) {
             showPlacesByCost(this.value);
             $('#typeFilter input:checkbox:not(:checked)').each(function() {
                 hidePlacesByType(this.value);
@@ -57,5 +58,29 @@ $(document).ready(function() {
         }
         else
             hidePlacesByCost(this.value);
+    });
+
+    $("#showRoutes").click(function() {
+        for (var i = 0; i < NUM_ROUTES; i++)
+            routePaths[i].polyline.setOptions({strokeOpacity: 0.85});
+        for (var i = 0; i < places.length; i++)
+            places[i].marker.setMap(map);
+        $('#costFilter input:checkbox:not(:checked)').each(function() {
+                hidePlacesByCost(this.value);
+            });
+        $('#typeFilter input:checkbox:not(:checked)').each(function() {
+                hidePlacesByType(this.value);
+            });
+    });
+    
+    $("#showAll").click(function() {
+        $('#costFilter input:checkbox:not(:checked)').each(function() {
+                showPlacesByCost(this.value);
+                this.checked = true;
+            });
+        $('#typeFilter input:checkbox:not(:checked)').each(function() {
+                showPlacesByType(this.value);
+                this.checked = true;
+            });
     });
 });

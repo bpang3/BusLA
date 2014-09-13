@@ -68,6 +68,12 @@ function drawRoute(filePath, color) {
             routeObj.polyline.setOptions({strokeOpacity: 0.85});
             filterRoutePlaces(routeObj.name);
             activeRoute = routeObj.name;
+            $('#costFilter input:checkbox:not(:checked)').each(function() {
+                hidePlacesByCost(this.value);
+            });
+            $('#typeFilter input:checkbox:not(:checked)').each(function() {
+                hidePlacesByType(this.value);
+            });
         });
         // event listener to show name of route on mouseover
         google.maps.event.addListener(routeObj.polyline, 'mouseover', function(event) {
@@ -95,16 +101,16 @@ function drawEvents(filePath) {
     $.getJSON(filePath, function(eventJSON) {
         for (var i = 0; i < eventJSON.length; i++) {
             function addMarker(place) {
-                var contentString = '<div><h4>' + place.name + ' | ' 
+                var contentString = '<div><h4>' + place.name + ' | '
                         + place.district + ' | ' + place.cost;
                 contentString = contentString + '</h4><p>'
-                if('link' in place) {
-                    contentString = contentString + '<a href=\'' 
+                if ('link' in place) {
+                    contentString = contentString + '<a href=\''
                             + place.link + '\'>website</a> | ';
                 }
                 contentString = contentString + '<a href=\'http://maps.google.com/maps?\n\saddr='
-                    + 'University+of+California,+Los+Angeles,+Los+Angeles,+CA+90095&daddr='
-                    + place.lat + ',' + place.lng + '&dirflg=r/' + '\'>get me there</a></p>';
+                        + 'University+of+California,+Los+Angeles,+Los+Angeles,+CA+90095&daddr='
+                        + place.lat + ',' + place.lng + '&dirflg=r/' + '\'>get me there</a></p>';
                 contentString = contentString + '</p><p>' + place.description + '</p>' +
                         '<img src=\'img/places/' + place.picture_path + '\' \n\
                             style=\'width:100%;max-height:250px\'></div>';
