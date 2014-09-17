@@ -1,14 +1,10 @@
 #BusLA
 http://zhengsun.github.io/BusLA/
 ##Introduction
-How can someone explore Los Angeles without a car? BusLA shows places you can get to from UCLA by bus only.
+Los Angeles is one of the most interesting and diverse cities in the world, with thousands of sights and locations to explore. However, exploring LA may be difficult for students who don't drive. BusLA makes exploring LA easy by showing a variety of locations that are bus-able from UCLA campus.
 ##Credits
 Bus LA is created by:
 
 Zheng Sun - Project Design, Development
 
-Byron Pang - Project Design, Data Creation.
-
-[Google Maps Pin Icons](http://templatic.com/news/100-free-templatic-map-icons/)
-
-[Google Maps Theme "Clean Cut"](http://snazzymaps.com/style/77/clean-cut)
+Byron Pang - Project Design, Data Creation
