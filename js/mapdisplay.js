@@ -131,6 +131,9 @@ function drawEvents(filePath) {
                 google.maps.event.addListener(marker, 'click', function() {
                     infowindow.setContent(contentString);
                     infowindow.open(window.map, marker);
+                    //pan to center to marker then pan down to center infowindow
+                    map.panTo(marker.getPosition());
+                    map.panBy(0, -130);
                 });
                 placeObj = place;
                 placeObj.marker = marker;
