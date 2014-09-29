@@ -138,6 +138,11 @@ function drawEvents(filePath) {
                 placeObj = place;
                 placeObj.marker = marker;
                 places[places.length] = placeObj;
+                
+                //append content to list view
+                
+                $('<div data-placename = "' + place.name + '" class="listviewitem">' 
+                        + contentString + '</div>').appendTo('#listview');
             }
             addMarker(eventJSON[i]);
         }

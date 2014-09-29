@@ -30,6 +30,16 @@
                     <li><a href="about.html">About</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" id="switchView" data-viewtype="map">Switch to List</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Legend<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><img src="img/pinicons/Activity.png"> Activity</li>
+                            <li><img src="img/pinicons/Chill.png"> Chill</li>
+                            <li><img src="img/pinicons/Explore.png"> Explore</li>
+                            <li><img src="img/pinicons/FoodDrink.png"> Food/Drink</li>
+                        </ul>
+                    </li>
                     <li><a href="#" id="showRoutes">Show All Routes</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filters<span class="caret"></span></a>
@@ -60,6 +70,7 @@
                 </ul>
             </nav>
             <div id="map-canvas"></div>
+            <div id="listview" style="display: none;"></div>
         </div>
     </body>
 </html>
