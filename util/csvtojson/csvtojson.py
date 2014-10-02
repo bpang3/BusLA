@@ -17,6 +17,8 @@ def loadCSV(readPath):
                     activity['type'] = "FoodDrink"
                 activity['district'] = row[0]
                 activity['picture_path'] = row[3]
+                if row[4]:
+                    activity['photo_credit'] = row[4]
                 if row[5] == "0":
                     activity['cost'] = "free"
                 else:
@@ -36,7 +38,7 @@ def loadCSV(readPath):
                     activity['link'] = row[13]
                 activity['description'] = row[14]
                 activityList.append(activity)
-        return json.dumps(activityList)
+        return json.dumps(activityList, encoding='latin1')
 
 def numToName(num):
     if num == "1":
