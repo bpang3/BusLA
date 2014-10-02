@@ -104,6 +104,7 @@ $(document).ready(function() {
         $('#typeFilter input:checkbox:not(:checked)').each(function() {
                 hidePlacesByType(this.value);
             });
+        activeRoute = false;
     });
     
     $("#showAll").click(function() {
