@@ -4,7 +4,7 @@
  */
 function filterRoutePlaces(routeName) {
     for (var i = 0; i < places.length; i++) {
-        if (places[i].routes.indexOf(routeName) == -1) {
+        if (places[i].routes.indexOf(routeName) == -1 && places[i].routes.indexOf('Walking') == -1) {
             places[i].marker.setMap(null);
             $('div[data-placename="' + places[i].name + '"]').hide();
         }

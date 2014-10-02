@@ -113,7 +113,13 @@ function drawEvents(filePath) {
                         + place.lat + ',' + place.lng + '&dirflg=r/' + '\'>get me there</a></p>';
                 contentString = contentString + '</p><p>' + place.description + '</p>' +
                         '<img src=\'img/places/' + place.picture_path + '\' \n\
-                            style=\'width:100%;max-height:250px\'></div>';
+                            style=\'width:100%;max-height:250px\'>';
+                if ('photo_credit' in place) {
+                    contentString = contentString + '<div style="font-size: 8pt">' + place.photo_credit
+                        + '</div></div>';
+                }
+                else
+                    contentString = contentString + '</div>';
                 var pinIcon = new google.maps.MarkerImage(
                         "img/pinicons/" + place.type + ".png",
                         null, /* size is determined at runtime */
