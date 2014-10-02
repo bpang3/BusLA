@@ -9,4 +9,5 @@ To use, simply navigate around the map and click on map markers to show more inf
 
 ##Credits
 Zheng Sun - Project Design, Development
+
 Byron Pang - Project Design, Data Creation
