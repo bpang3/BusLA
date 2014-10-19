@@ -17,7 +17,8 @@ function filterRoutePlaces(routeName) {
 
 function showPlacesByType(placeType) {
     for (var i = 0; i < places.length; i++) {
-        if (places[i].type == placeType && (!activeRoute || places[i].routes.indexOf(activeRoute) != -1)) {
+        if (places[i].type == placeType && ((!activeRoute || places[i].routes.indexOf(activeRoute) != -1) ||
+                places[i].routes.indexOf('Walking') != -1)) {
             places[i].marker.setMap(map);
             $('div[data-placename="' + places[i].name + '"]').show();
         }
@@ -35,8 +36,8 @@ function hidePlacesByType(placeType) {
 
 function showPlacesByCost(placeCost) {
     for (var i = 0; i < places.length; i++) {
-        if (places[i].cost == placeCost && (!activeRoute || places[i].routes.indexOf(activeRoute) != -1)
-                ) {
+        if (places[i].cost == placeCost && (!activeRoute || places[i].routes.indexOf(activeRoute) != -1) ||
+                places[i].routes.indexOf('Walking') != -1) {
             places[i].marker.setMap(map);
             $('div[data-placename="' + places[i].name + '"]').show();
         }
